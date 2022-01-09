@@ -1,13 +1,9 @@
 module.exports = {
     // base:'/sxyblog/',
-    title: 'demo模板',
-    description: '我的第一个',
+    title: 'TCL博客',
+    description: '尘埃入世',
     port: '8080',
-    head: [
-        ['link', {rel: 'icon', href: 'favicon.ico'}],//设置页面标签icon
-        ['meta', {author: 'SXY', content: 'TCL'}],
-        ['meta', {name: 'keyowrds', content: 'vuepress,个人博客'}]
-    ],
+    head: require('./config/headConf'),
     markdown: {
         lineNumbers: true
     },
@@ -30,40 +26,9 @@ module.exports = {
     // },
     themeConfig: {
         lastUpdated: '最近更新',
-        nav: require('./nav'),
+        nav: require('./config/navConf'),
         version: '1.0',
-        // sidebar: [
-        //     '/',
-        //     '/about', {
-        //         title: 'CSS 1',   // 必要的
-        //         path: '/foo/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        //         collapsable: false, // 可选的, 默认值是 true,
-        //         sidebarDepth: 1,    // 可选的, 默认值是 1
-        //         children: [
-        //             '/'
-        //         ]
-        //     },
-        //     '/about1', {
-        //         title: 'CSS 1',   // 必要的
-        //         path: '/foo/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        //         collapsable: false, // 可选的, 默认值是 true,
-        //         sidebarDepth: 1,    // 可选的, 默认值是 1
-        //         children: [
-        //             '/'
-        //         ]
-        //     },
-        // ],
+        sidebar: require('./config/sidebarConfig')
     },
-    plugins: {
-        '@vssue/vuepress-plugin-vssue': {
-            // 设置 `platform` 而不是 `api`
-            platform: 'github',
-            // 其他的 Vssue 配置
-            owner: 'wuxinabc',
-            repo: 'sxyblog',
-            clientId: 'f9368a69c836bd3cfcb2',
-            clientSecret: 'c4e7623d3e4649428252d19b62d1c28a8547ab59',
-            autoCreateIssue:true,
-        },
-    }
+    plugins: require('./config/pluginConf')
 }
