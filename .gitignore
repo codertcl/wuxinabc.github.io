@@ -11,3 +11,6 @@
 
 pkg/
 src/
+
+#隐藏私密信息
+secert.js
