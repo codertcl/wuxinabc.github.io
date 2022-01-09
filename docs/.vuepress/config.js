@@ -28,7 +28,7 @@ module.exports = {
         lastUpdated: '最近更新',
         nav: require('./config/navConf'),
         version: '1.0',
-        sidebar: require('./config/sidebarConfig')
+        // sidebar: require('./config/sidebarConfig')
     },
     plugins: require('./config/pluginConf')
 }

@@ -1,0 +1,36 @@
+{
+  "name": "sxyblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "cname": "bash cname.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuxinabc/sxyblog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuxinabc/sxyblog/issues"
+  },
+  "homepage": "https://github.com/wuxinabc/sxyblog#readme",
+  "dependencies": {
+    "@vssue/api-github-v4": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
+    "countup.js": "^2.0.8",
+    "vuepress": "^1.9.5",
+    "vuepress-theme-reco": "^1.6.10"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.5",
+    "@vuepress/plugin-medium-zoom": "^1.9.5",
+    "@vuepress/plugin-pwa": "^1.9.5"
+  }
+}

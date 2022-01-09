@@ -16,8 +16,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-#git push -f git@github.com:wuxinabc/wuxinabc.github.io.git master:master2
-git push -f git@github.com:wuxinabc/blog.git master:master
+git push -f git@github.com:wuxinabc/wuxinabc.github.io.git master:gh-pages
 
 cd -

@@ -10,3 +10,7 @@ sidebar:auto
 ![](https://s2.loli.net/2022/01/06/4Qf5tRVwnUG9A18.jpg)
 
 追加travis
+
+<img class="flexibile" :src="$withBase('assets/img/1.jpg')" alt="foo">
+
+![An image](assets/img/1.jpg)
